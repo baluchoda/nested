@@ -1,0 +1,13 @@
+import json
+
+# assigns a JSON string to a variable called person
+person = '{"name": "Balu Choda", "address": {"street":"beverly hills","state":"newyork"},"hobbies": ["music", "watching TV", "hanging out with friends"]}'
+
+# parse file
+obj = json.loads(person)
+
+# show values
+print("name: " + str(obj['name']))
+print("hobbies are :" + str(obj['hobbies']))
+print("state living is : " + str(obj['address']['state']))
+
